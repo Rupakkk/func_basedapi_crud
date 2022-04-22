@@ -6,5 +6,9 @@ from .models import Student
 # Create your views here.
 
 @api_view('GET','POST','PUT','DELETE')
-def student_api(request)
+def student_api(request):
+    if request.method == "GET":
+        data = request.data
+        
+
 
